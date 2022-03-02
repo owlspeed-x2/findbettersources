@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 25px;
+      max-width: 800px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    table,
+    th,
+    td {
+      border: 1px solid;
+    }
+    th,
+    td {
+      padding: 5px 10px;
+    }
+    th {
+      text-align: left;
+    }
+    p {
+      line-height: 1.4rem;
+    }
+    button {
+      width: 100%;
+      font-size: 1rem;
+      padding: 15px;
+      border-radius: 8px;
+      outline: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      display: inline-block;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    button:active {
+      opacity: 0.7;
+    }
+    .buttonContainer {
+      flex-direction: row;
+      gap: 8px;
+    }
+    @media (max-width: 800px) {
+      .buttonContainer {
+        flex-direction: column;
+        gap: 4px;
+      }
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Limiting Russia's Propaganda</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HVJX7THRRW"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HVJX7THRRW");
+    </script>
+  </head>
+  <body>
+    <h1>Limiting Russia's Propaganda</h1>
+    <p>
+      Putin's war on Ukraine hinges on the support of the Russian public.
+      Together we can inhibit the spread of propaganda created by the Russian
+      Government.
+    </p>
+    <p>
+      <b
+        >By running the program on this website, you are actively participating
+        in disturbing Russian state-influenced media. Once you press "Start"
+        your browser will continuously send requests to the sites shown in the
+        table below. With enough participants, the sites will eventually get
+        overloaded and won't be reachable anymore.</b
+      >
+    </p>
+    <p>
+      Our goal is to encourage the Russian people to seek out other news
+      sources. This website is part of a bigger, coordinated and ongoing effort
+      to disable Putin's propaganda machine.
+    </p>
+    <div style="margin: 25px 0">
+      Find the code to this website on
+      <a
+        target="_empty"
+        style="color: blue"
+        href="https://github.com/owlspeed-x2/findbettersources"
+      >
+        github.
+      </a>
+    </div>
+    <div
+      style="
+        background-color: rgb(235, 235, 235);
+        padding: 15px;
+        gap: 10px;
+        border-radius: 8px;
+      "
+    >
+      <h3 style="font-size: 1.4rem">⚠️ Before you start</h3>
+      <ul>
+        <li>
+          <b>Use a VPN to obscure your location!</b> Participating in this type
+          of activism (ddos) is illegal. Proton VPN offers a base version of
+          their VPN for free
+          <a style="color: blue" target="_empty" href="https://protonvpn.com"
+            >here</a
+          >.
+        </li>
+        <br />
+        <li>
+          <b>Do not use this program over mobile broadband.</b> This website
+          will repeatedly send requests to various Russian news outlets and will
+          deplete data-plans quickly.
+        </li>
+      </ul>
+    </div>
+
+    <div
+      class="buttonContainer"
+      style="
+        display: flex;
+        padding: 25px;
+        background-color: rgb(235, 235, 235);
+        border-radius: 8px;
+        margin-top: 20px;
+      "
+    >
+      <button id="start-button" style="background-color: rgb(22, 182, 44)">
+        Start
+      </button>
+      <button id="stop-button" style="background-color: rgb(255, 93, 93)">
+        Stop
+      </button>
+    </div>
+
+    <p>
+      Below you can see the targeted sites and the number of requests sent to
+      each of them by your browser:
+    </p>
+    <table id="site-table" style="margin-top: 15px">
+      <tr>
+        <th>Site</th>
+        <th>Requests</th>
+      </tr>
+    </table>
+  </body>
+  <script type="text/javascript" src="index.js"></script>
+</html>
